@@ -1,0 +1,505 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.bgimg{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bookmark{
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+position: absolute;
+backdrop-filter: blur(50px);
+border-radius: 20px;
+height: 45px;
+width: 250px;
+left: 10px;
+top: 10px;
+}
+
+.bookmark:hover{
+
+transition: 0.5s;
+height: 50px;
+width: 300px;
+
+}
+
+.button {
+padding-left: 5px;
+margin: 0;
+height: auto;
+background: transparent;
+padding: 0;
+border: none;
+cursor: pointer;
+}
+
+
+.button {
+--border-right: 6px;
+--animation-color: #55ddf2;
+--fs-size: 2em;
+letter-spacing: 3px;
+text-decoration: none;
+font-size: var(--fs-size);
+position: relative;
+text-transform: uppercase;
+color: rgb(211, 209, 209);
+}
+
+.hover-text {
+position: absolute;
+box-sizing: border-box;
+content: attr(data-text);
+color: var(--animation-color);
+width: 0%;
+inset: 0;
+border-right: var(--border-right) solid var(--animation-color);
+overflow: hidden;
+transition: 0.5s;
+-webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+width: 100%;
+filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+body{
+display: grid;
+place-items: center;
+height: 100vh;
+background: #000;
+}
+
+.smart{
+
+  transition: 0.3s;
+  position: absolute;
+  right: -120px;
+  bottom: 200px;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  backdrop-filter: blur(10px);
+  overflow:hidden;
+  z-index: 1;
+
+
+  #one{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 120px;
+    top: 20px;
+  }
+
+  #two{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 50px;
+    top: 55px;
+  }
+
+  #three{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 25px;
+    top: 130px;
+  }
+
+  #four{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 55px;
+    top: 195px;
+  }
+
+  #five{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 125px;
+    top: 230px;
+  }
+
+  #six{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 130px;
+    top: 85px;
+  }
+
+  #seven{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 85px;
+    top: 125px;
+  }
+
+  #eight{
+    transition: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 130px;
+    top: 165px;
+  }
+}
+.smart:hover{
+
+  height: 450px;
+  width: 450px;
+  transition: width 0.3s, height 0.3s ;
+  overflow: hidden;
+
+  #one{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 200px;
+    top: 30px;
+    transition: 0.5s;
+  }
+
+  #two{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 90px;
+    top: 70px;
+    transition: 0.5s;
+  }
+
+  #three{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 30px;
+    top: 180px;
+    transition: 0.5s;
+  }
+
+  #four{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 90px;
+    top: 300px;
+    transition: 0.5s;
+  }
+
+  #five{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 200px;
+    top: 350px;
+    transition: 0.5s;
+  }
+
+  #six{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 220px;
+    top: 120px;
+    transition: 0.5s;
+  }
+
+  #seven{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 140px;
+    top: 180px;
+    transition: 0.5s;
+  }
+
+  #eight{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    left: 220px;
+    top: 260px;
+    transition: 0.5s;
+  }
+
+  #one:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #two:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #three:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #four:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #five:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #six:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #seven:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+  #eight:hover
+  {
+    height: 80px;
+    width: 80px;
+  }
+
+}
+
+.smart:hover{
+  bottom: 150px;
+  transition: 0.3s;
+  overflow: hidden;   
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.container{
+position: absolute;
+display: flex;
+justify-content: center;
+width: 600px;
+height: 430px;
+top: 130px;
+left: 100px;
+border-radius: 40px;
+z-index: 1;
+}
+
+.txt{
+position: absolute;
+align-items: center;
+top: 20px;
+font-size: 100px;
+-webkit-text-stroke: 5px rgb(48, 87, 109);
+color: transparent;
+z-index: 2;
+}
+
+.search{
+display: flex;
+position: absolute;
+width: 450px;
+height: 40px;
+top: 150px;
+border-radius: 20px;
+border: rgba(43, 88, 124, 0.841);;
+backdrop-filter: blur(50px);  
+transition: 0.5s;
+z-index: 1;
+}      
+
+.search input{
+flex: 1;
+width: 450px;
+height: 40px;
+padding-left: 20px;
+font-size: 20px;
+border-radius: 20px;
+color: rgb(182, 217, 255);
+border: 2px solid rgba(0, 0, 0, 0.142);
+outline: none;
+transition: 0.5s;
+background: transparent;
+}
+
+.search:hover
+{
+width: 475px;
+height: 50px;
+box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.57);
+transition: 0.5s;
+}
+
+.search input:hover{
+width: 475px;
+height: 50px;
+box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+transition: 0.5s;
+}
+
+.google{
+display: flex;
+flex-direction: column;
+position: absolute;
+align-items: center;
+justify-content: center;
+padding: 20px;
+width: 500px;
+height: 200px;
+border-radius: 40px;
+bottom: 10px;
+backdrop-filter: blur(10px);
+transition: 0.5s;
+}
+
+.google:hover{
+transition: 0.5s;
+width: 525px;
+height: 210px;
+box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+
+.box{
+  height: 55px ;
+  width: 55px ;
+  transition: 0.5s;
+}
+}
+
+.googlef{
+
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: space-around;
+
+}
+
+.googles{
+
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: space-around;
+
+}
+
+.box{
+transition: 0.5s;
+width: 50px;
+height: 50px;
+border-radius: 30px;
+
+
+}
+
+#on{
+height: 50px;
+width: 50px;
+}
+#tw{
+height: 50px;
+width: 50px;
+
+}
+#th{
+height: 50px;
+width: 50px;
+
+}
+#fo{
+height: 50px;
+width: 50px;
+}
+
+#fi{
+height: 50px;
+width: 50px;
+}
+#si{
+height: 50px;
+width: 50px;
+}
+#se{
+height: 50px;
+width: 50px;
+}
+#ei{
+height: 50px;
+width: 50px;
+}
+
+#on:hover{
+height: 60px;
+width: 60px;
+}
+#tw:hover{
+height: 60px;
+width: 60px;
+}
+#th:hover{
+height: 60px;
+width: 60px;
+}
+#fo:hover{
+height: 60px;
+width: 60px;
+}
+
+#fi:hover{
+height: 60px;
+width: 60px;
+}
+#si:hover{
+height: 60px;
+width: 60px;
+}
+#se:hover{
+height: 60px;
+width: 60px;
+}
+#ei:hover{
+height: 60px;
+width: 60px;
+}
