@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=6.0">
     <title>potter's chrome</title>
     <link rel="stylesheet" href="style.css">
-    <link type="image/png" rel="icon" href="./components/logo/potter's chrome.jpg">
+    <link type="image/png" rel="icon" href="./components/logo/loogoo.jpg">
 </head>
 <body>    
 
-    <img class="bgimg"  src="/components/harry.avif" alt="">
+    
     <main>
 
+
+        <div class="containero">
+            <div class="clock">
+                <div id="Date">Monday 26 September 2023</div>
+                    <ul>
+                        <li id="hours">05</li>
+                        <li id="point">:</li>
+                        <li id="min">20</li>
+                        <li id="point">:</li>
+                        <li id="sec">30</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
 
         <a href="" class="bookmark">
             <button class="button">
@@ -22,11 +37,8 @@
 
         <!-- search bar -->
 
-        <div class="container">
 
-            <p class="txt">Google</p>
-            
-            <form class="search" action="https://www.google.com/search" method="get">
+        <div class="search">
                 <input
                     class="input"
                     type="text"
@@ -36,8 +48,10 @@
                     spellcheck="false"
                     value=""
                     autocomplete="on"/>
-            </form>
+        </div>
+        </div>
 
+        <div class="container">
             <div class="google">
                 
                 <div class="googlef">
@@ -71,5 +85,9 @@
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script> 
+    <script src="suggestion.js"></script>
+    <img class="bgimg"  src="/components/harry.avif" alt="">
 </body>
 </html>
