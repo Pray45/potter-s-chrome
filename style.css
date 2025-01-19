@@ -78,7 +78,6 @@
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
-
 body{
   display: grid;
   place-items: center;
@@ -379,6 +378,7 @@ body{
 .search{
   display: flex;
   position: absolute;
+  align-items: center;
   left: 190px;
   top: 330px;
   width: 450px;
@@ -419,6 +419,9 @@ body{
   transition: 0.5s;
   }
 
+.but{
+  display: none;
+}
 
 .google{
 display: flex;

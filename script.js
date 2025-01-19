@@ -20,59 +20,18 @@ function clock(){
 
   // idk
 
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
-let linkTag = searchWrapper.querySelector("a");
-let webLink;
+  var input = document.getElementById("sq");
 
-inputBox.onkeyup = (e) => {
-  let userData = e.target.value;
-  let emptyArray = [];
-  if (userData) {
-    icon.onclick = () => {
-      webLink = `https://www.google.com/search?q=${userData}`;
-      linkTag.setAttribute("href", webLink);
-      linkTag.click();
+  input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("btn").click();
     }
-    emptyArray = suggestions.filter((data) => {
-
-        return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
-    });
-    emptyArray = emptyArray.map((data) => {
-
-        return data = `<li>${data}</li>`;
-    });
-    searchWrapper.classList.add("active");
-    showSuggestions(emptyArray);
-    let allList = suggBox.querySelectorAll("li");
-    for (let i = 0; i < allList.length; i++) {
-      allList[i].setAttribute("onclick", "select(this)");
-    }
-  } else {
-    searchWrapper.classList.remove("active");
-  }
-}
-function select(element) {
-  let selectData = element.textContent;
-  inputBox.value = selectData;
-  icon.onclick = () => {
-    webLink = `https://www.google.com/search?q=${selectData}`;
-    linkTag.setAttribute("href", webLink);
-    linkTag.click();
-  }
-  searchWrapper.classList.remove("active");
-}
-function showSuggestions(list) {
-  let listData;
-  if (!list.length) {
-    userValue = inputBox.value;
-    listData = `<li>${userValue}</li>`;
-  } else {
-    listData = list.join('');
-  }
-  suggBox.innerHTML = listData;
-}
-
-// for digital clock
-
+  });
+  
+  var btn = document.getElementById("btn");
+  btn.addEventListener("click", () => {
+    var search = document.getElementById("sq").value;
+    var searchURL = "https://www.google.com/search?q=" + search;
+    window.open(searchURL, "_self");
+  });
