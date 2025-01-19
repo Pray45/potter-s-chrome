@@ -351,7 +351,7 @@ body{
 
 .clock{
   
-  color: rgb(21, 44, 57);
+  color: rgb(34, 59, 73);
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -384,7 +384,7 @@ body{
   width: 450px;
   height: 40px;
   border-radius: 20px;
-  border: rgba(43, 88, 124, 0.841);;
+  border: rgba(43, 88, 124, 0.841);
   backdrop-filter: blur(50px);  
   transition: 0.5s;
   z-index: 1;

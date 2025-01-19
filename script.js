@@ -1,4 +1,6 @@
 
+// digital clock
+
 function clock(){
   var monthNames = [ "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December" ];
@@ -18,7 +20,10 @@ function clock(){
   document.getElementById('sec').innerHTML = s;
   }var inter = setInterval(clock,400);
 
-  // idk
+
+
+  // for search bar
+
 
   var input = document.getElementById("sq");
 
