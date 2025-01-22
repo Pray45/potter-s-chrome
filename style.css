@@ -312,7 +312,7 @@ body{
 .smart:hover{
   bottom: 150px;
   transition: 0.3s;
-  overflow: hidden;   
+  overflow: hidden; 
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -351,7 +351,7 @@ body{
 
 .clock{
   
-  color: rgb(34, 59, 73);
+  color: rgb(255, 255, 255);
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -372,7 +372,7 @@ body{
 
 
 ::placeholder{
-  color: rgb(182, 217, 255);
+  color: rgb(255, 255, 255);
 }
 
 .search{
@@ -397,7 +397,7 @@ body{
   padding-left: 20px;
   font-size: 20px;
   border-radius: 20px;
-  color: rgb(182, 217, 255);
+  color: rgb(255, 255, 255);
   border: 2px solid rgba(0, 0, 0, 0.142);
   outline: none;
   transition: 0.5s;
