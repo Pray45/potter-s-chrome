@@ -24,15 +24,15 @@
   border-radius: 20px;
   height: 45px;
   width: 250px;
-  left: 10px;
+  left: 0px;
   top: 10px;
 }
 
 .bookmark:hover{
 
   transition: 0.5s;
-  height: 55px;
-  width: 320px;
+  height: 50px;
+  width: 280px;
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
 
 }
@@ -351,7 +351,7 @@ body{
 
 .clock{
   
-  color: rgb(255, 255, 255);
+  color: rgb(9, 53, 58);
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
